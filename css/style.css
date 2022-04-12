@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(251, 93, 93);
+}
+.body{
+    width: 200px;
+    height:400px;
+    background: rgb(0, 0, 0);
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.red{
+    width: 100px;
+    height: 100px;
+    background: darkred;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+.yellow{
+    width: 100px;
+    height: 100px;
+    background:darkgoldenrod;
+    border-radius: 50%;
+    border: 2px solid yellow;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    background:darkgreen;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+.column{
+    width: 50px;
+    height: 100px;
+    background: rgb(0, 0, 0) ;
+    position: relative;
+}
+.column::after{
+    content: "";
+    width: 200px;
+    height: 20px;
+    border-radius: 12px;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    top: 100%;
+    right: -75px;
+}
+.redShadow{
+    box-shadow: 0px 0px 4px 4px  red ;
+}
+.yellowShadow{
+    box-shadow: 0px 0px 4px 4px  yellow ;
+}
+.greenShadow{
+    box-shadow: 0px 0px 4px 4px  green ;
+}
